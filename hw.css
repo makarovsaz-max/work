@@ -1,0 +1,93 @@
+footer{
+    min-height: 1050px;
+    background: #000;
+}
+.footup{
+    display: flex;
+    row-gap: 30%;
+    text-align: center;
+    justify-content: space-between;
+}
+.footup{
+    margin: 0 230px;
+}
+.footup>p{
+    color: var(--wei, #FFF);
+    font-size: 48px;
+    font-weight: 700;
+  
+}
+.ready{
+    display: flex;
+    align-items: center;
+}
+.ready>p{
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 400;
+    padding-right: 55px;
+}
+.ready button{
+    width: 239.35px;
+    height: 69.136px;
+    color: #000;
+    border-radius: 8px;
+    background: #FFA343;
+    font-size: 17px;
+    font-weight: 700;
+}
+.line{
+    height: 1.383px;
+    opacity: 0.3;
+    background: #FFF;
+    margin: 0 230px;
+    margin-top: 5px;
+}
+.footinfo{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 230px;
+    padding-top: 50px;
+}
+.email{
+    display: flex;
+    flex-direction: column;
+    column-gap: 50px;
+}
+.email>p{
+    color: #FFF;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.3px;
+    width: 361px;
+}
+.email input{
+    border: none;
+    background: #000;
+    height: 70px;
+    width: 330px;
+}
+.email button{
+    height: 69.136px;
+    width: 69.136px;
+    color: #000;
+    background: #FFA343;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.allcon{
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    width: 400px;
+}
+.allcon>p:not(:first-child){
+    margin: 0;
+    padding-bottom: 25px;
+}
+.name{
+    color: #FFD1A0;
+}
