@@ -1,0 +1,70 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --hover1-background1: #4273F1;
+    --hover1-background2: #8A77FF;
+    --hover1-text-color1: #FFFFFF;
+    --hover1-text-color2: #000000;
+    --hover2-text-color1: #000000;
+    --hover2-border-color1: #E6FF4F;
+    --hover2-background1: #E2FFD4;
+    --hover2-border-color2: #7CFF4F;
+    --hover2-text-color2: #14450C;
+}
+
+body{
+    margin: 0 auto;
+    height: 200px;
+    justify-content: center;
+    display: flex;
+    padding-top: 100px;
+}
+
+.hover1{
+    background: var(--hover1-background1);
+    color: var(--hover1-text-color1);
+    width: 250px;
+    height: 60px;
+    border-radius: 5px;
+    border: none;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all, 0.3s;
+}
+
+.hover2{
+    background: transparent;
+    color: var(--hover2-text-color1);
+    width: 235px;
+    height: 57px;
+    border: 2px solid var(--hover2-border-color1);
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: center;
+    transition: all, 0.3s;
+}
+
+.hover1:hover{
+    background: var(--hover1-background2);
+    color: var(--hover1-text-color2);
+    width: 301px;
+    height: 60px;
+    border-radius: 30px;
+    text-transform: none;
+}
+
+.hover2:hover{
+    background: var(--hover2-background1);
+    border-color: var(--hover2-border-color2);
+    color: var(--hover2-text-color2);
+    width: 235px;
+    height: 57px;
+}
