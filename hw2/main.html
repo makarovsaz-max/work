@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .text {
+            font-weight: 600;
+        }
+
+    </style>
+<script >
+  
+</script>
+</head>
+<body>
+        <script >
+       //  const a = parseInt(prompt("Введiть число", "10"));
+        /* if (a === 10) {
+            alert("Вiрно")
+         } else {
+            alert("Неправильно")
+         }   */
+       //  a === 10 ? alert("Вiрно") : alert("Неправильно");
+       /* <p style="display: none;">
+        тернарний
+        1. Якщо змінна a дорівнює 10, то виведіть 'Вірно', інакше виведіть 'Неправильно'.
+
+        <br>
+        іф переписати у тернарний
+        2.У змінній min лежить число від 0 до 59. Визначте, в яку чверть години потрапляє це число
+        (У першу, другу, третю або четверту).
+        <br>
+        Свіч
+        if(min <= 15 && min > 0) {
+            document.write("першут")
+        } else if (min <= 30 && min > 0){
+            document.write("другу")
+        } else if (min <= 45 && min > 0){
+            document.write("третю")
+        } else  if (min <= 60 && min > 0) {
+            document.write("четверту")
+        } else {
+            console.error("error")
+        } 
+        const min = parseInt(prompt("input number", "1-60"));
+
+        min <= 15 && min > 0 ? document.write("першу") : 
+        min <= 30 && min > 0 ?  document.write("другу") :
+        min <= 45 && min > 0 ?  document.write("третю") :
+        min <= 59 && min > 0 ?  document.write("четверту") : console.error("error"); */
+        /*
+        3.Змінна num може приймати 4 значення: 1, 2, 3 або 4. Якщо вона має значення '1',
+        то змінну result запишемо 'зима', якщо має значення '2' – 'весна' тощо.
+        Розв'яжіть завдання через switch-case.
+        <br>
+        4. Використовуючи цикли та умовні конструкції намалюйте ялинку
+        <br>
+        5. Використовуючи умовні конструкції перевірте вік користувача, якщо користувачеві буде
+        від 18 до 35 років переведіть його на сайт google.com через 2 секунди,
+        якщо вік користувача буде від 35 до 60 років, переведіть його на сайт
+        https://www.uz.gov.ua/,
+        якщо користувачеві буде до 18 років покажіть йому першу серію лунтика з ютубу
+      Виконайте це завдання за допомогою if, switch, тернарний оператор */
+       /* const min = prompt("input number", "1-60")*/
+
+       /* const num = prompt("Введите номер поры года: 1-2-3-4");
+        let result;
+
+        switch (num) {
+            case "1":
+                        {
+                          result =  "Зима";
+                        };
+                        break;
+                    case "2":
+                        {
+                            result = "Лето";
+                        };
+                        break;
+                    case "3":
+                        {
+                            result = "Осень";
+                        };
+                        break;
+                    case "4":
+                        {
+                            result = "Весна";
+                        };
+                        break;
+                    default:
+                        {
+                            document.body.style.backgroundColor = "tomato"
+                        };
+                }
+             document.write (result ? result : "щось пiшло не так") */
+
+             document.write("<span class='text'>порожній квадрат 10*10 <br/><br/></span>");
+             for(let count=0; count<10; count++){
+            if(count==0 || count==9){
+                for(let b=0; b<10; b++){
+                    document.write("* &nbsp");       
+                }
+            }
+            else{
+                document.write("* &nbsp "); 
+                for(let c=0; c<8; c++){
+                    document.write(" &nbsp &nbsp");
+                }
+                document.write("* &nbsp");
+            }
+            document.write("<br>");
+        } document.write("<hr>");
+
+        document.write("<span class='text'>Прямоугольный треугольник <br/><br/></span>");
+        for (let pryam=0; pryam<=10; pryam++){
+            for(let i=1; i<=pryam; i++){
+                document.write("&nbsp;&nbsp;*")
+            }
+            document.write("<br>");
+        } document.write("<hr>");
+
+        document.write("<span class='text'>рівносторонній трикутник <br/><br/></span>");
+        document.write("<div style='text-align:center; float:left;'>")
+        for(let rovn=0;rovn<10;rovn++){
+            for(let o=0;o<rovn;o++){
+                document.write("&nbsp * &nbsp");  
+            }
+            document.write("<br>");
+        }        document.write("<hr>");
+        document.write("</div>")
+        document.write("<br><br><br><br><br><br><br><br><br><br><br>");
+        
+        document.write("<span class='text'>ромб <br/><br/></span>");
+            document.write("<div style='text-align: center; float: left;'>")
+// Верхняя часть рома
+                    for(let romb=1; romb <=8; romb++){ 
+                        for(let b=1; b<=romb; b++){
+                            document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*");
+                        }
+                        document.write("<br>");
+                    }
+// Нижняя часть ромба                  
+                    for(let romb1=7; romb1>=1; romb1--){ 
+                        for(let rombn=1; rombn<=romb1; rombn++){
+                            document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*");
+                        }
+                        document.write("<br>");
+                    }document.write("<hr>")
+        
+            document.write("</div>") 
+
+           /* 
+           Дополнительное задание №1
+           
+           var num1 = parseFloat(prompt("Введите первое число :"));
+            var num2 = parseFloat(prompt("Введите второе число :"));
+            (num1+num2)<4 ? alert("Много"): alert("Мало") ;  
+            
+                    №2
+            var login=prompt("Введите логин :");
+            login === 'Вася' ? alert("Привет.") : login === 'Директор' ? alert("Здравствуйте.") : login==="" ? alert("Такого пользователя не существует.") : alert("Нет логина.");
+                    */
+</script>
+</body>
+</html>
