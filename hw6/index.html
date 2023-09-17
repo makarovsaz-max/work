@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Human (h_name, h_surname, h_age, h_number, h_email){
+            this.name = h_name;
+            this.surname = h_surname;
+            this.age = h_age;
+            this.number = h_number;
+            this.email = h_email;
+        }
+
+        const worker1 = new Human ("Katya", "Orlova", 15, "3806314151", "katya_orl@gmail.com")
+        const worker2 = new Human ("Ivan", "Ivanov", 45, "3809524124", "ivan96151@gmail.com")
+        const worker3 = new Human ("Vasya", "Vasiliov", 30, "3809314611", "Vasyalila@gmail.com")
+
+        let w_people = [worker1, worker2, worker3];
+
+        w_people.sort(function(x,y){
+            return x.age - y.age;
+        })
+        for (let i = 0; i < w_people.length; i++) {
+        document.write(`Name : ${w_people[i].name} | Surname : ${w_people[i].surname} | Age : ${w_people[i].age} | Number : ${w_people[i].number} | Email : ${w_people[i].email}<br />`);
+        }
+        console.log(w_people);
+        let dates = new Date ();
+        document.write(`Worker company | ${dates} |`)
+        
+    </script>
+</body>
+</html>
