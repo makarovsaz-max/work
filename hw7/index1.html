@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          /*
+        #1
+        Створити клас Animal та розширюючі його класи Dog, Cat, Horse.
+
+        Клас Animal містить змінні food, location і методи makeNoise, eat, sleep. Метод makeNoise, наприклад, може виводити на консоль "Така тварина спить".
+
+        Dog, Cat, Horse перевизначають методи makeNoise, eat.
+
+        Додайте змінні до класів Dog, Cat, Horse, що характеризують лише цих тварин.
+
+        Створіть клас Ветеринар, у якому визначте метод void treatAnimal(Animal animal). 
+        
+        Нехай цей метод роздруковує food і location тварини, що прийшла на прийом.
+
+        У методі main створіть масив типу Animal, в який запишіть тварин всіх типів, що є у вас. 
+        
+        У циклі надсилайте їх на прийом до ветеринара.
+        */
+
+        class Animal {
+            constructor(food, location){
+            this.food = food;
+            this.location = location
+            }
+            makeNoise () {
+                console.log ("Это шумное животное!")
+            }
+            eat () {
+                console.log ("Это животное ест!")
+            }
+            sleep () {
+                console.log ("Это животное спит!")
+            }
+        }
+
+        class Dog extends Animal {
+            constructor (name, food, location){
+                super(food,location);
+                this.name = name;
+            }
+
+        makeNoise() {
+            return console.log("Собаки громко гавкают")
+        }
+
+        eat () {
+            return console.log(`Рекомендованая една для этого животного ${this.food} `)
+        }
+        sleep () {
+            return console.log ("Животное плохо спит")
+        }
+    }
+
+    class Cat extends Animal {
+            constructor (age, food, location){
+                super(food,location);
+                this.age = age;
+            }
+
+        makeNoise() {
+            return console.log("Это животное не является шумной.")
+        }
+
+        eat () {
+            return console.log(`Рекомендованая една для этого животного ${this.food} `)
+        }
+        sleep (){
+            return console.log ("После операции спит хорошо")
+        }
+        
+    }
+
+    class Horse extends Animal {
+            constructor (type, food, location){
+                super(food,location);
+                this.type = type;
+            }
+
+        makeNoise() {
+            return console.log("Кони могут громко игогокать.")
+        }
+
+        eat () {
+            return console.log(`Рекомендованая еда для этого животного ${this.food} `)
+        }
+        sleep (){
+            return console.log("Животное не спит")
+        }
+    };
+
+    class Veterinarian{
+            treatAnimal(Animal){
+                return console.log(`Это животное питается такой едой : ${Animal.food},\n местонахождение на сегодняший день : ${Animal.location},\n записано ли оно на прием сегодня ${Math.random() < 0.5},`);
+            }
+        }
+
+        const main = [
+        new Dog ("Булка", "Корм для собак", "Находится у хозяев"),
+        new Cat (5, "Корм для котів", "Клиника"),
+        new Horse ("Понни","Солома", "Ферма" )
+        ];
+
+        const proVet = new Veterinarian();
+        let currentDate = new Date();
+
+        for(const Animal of main){
+            proVet.treatAnimal(Animal);
+            Animal.makeNoise();
+            Animal.eat();
+            Animal.sleep();
+            console.log(`---------------------------------------`);
+        }
+        console.log("Актуальные данные на " + currentDate);
+
+       /* class MyString {
+            constructor (str) {
+                   this.str = str
+            }
+            reverse (){
+                console.log (this.str.split("").reverse().join(""))
+            }
+            ucFirst(){
+                console.log(this.str[0].toUpperCase)
+            }
+            ucWords() {
+               console.log(this.str[0].toUpperCase() + string.slice(1)) 
+                alert("best programa real");
+            }
+        }
+        */
+    </script>
+</body>
+</html>
