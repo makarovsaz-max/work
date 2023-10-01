@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Martian Mono', monospace;
+    margin: 0;
+}
+
+.green {
+    background-color: green;
+}
+
+.hw9 {
+    align-items: center;
+    width: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    margin: 0 auto;
+}
+
+
+.login-text h1{
+    font-size: 10px;
+    font-weight: 800;
+}
+
+.login-text p {
+    font-size: 15px;
+    font-weight: 200;
+    color: gray;
+}
+
+input {
+    margin-left: 12rem;
+    width: 50%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+button {
+    border: none;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #42aaff;
+    margin-top: 10px;
+    height: 30px;
+    width: 51%;
+    margin-left: 11.9rem;
+}
+
+button:hover {
+    background-color: #1ce;
+    transition-duration: 2s;
+}
