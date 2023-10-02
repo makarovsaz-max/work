@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Робота с вузлами DOM</title>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            margin: 10% auto;
+        }
+
+        .select {
+            border: 1px green solid;
+            color: seagreen;
+        }
+
+        .black {
+            color: black;
+            
+        }
+        li{
+            padding: 5px 20px;
+            list-style-type:circle;
+            transition: all 0.35s;
+        }
+
+        input {
+            width: 20rem;
+            border-radius: 30px;
+        }
+
+        input:hover {
+            background-color: orange;
+            transition-duration: 3s;
+        }
+    </style>
+</head>
+<body>
+    <!-- https://developer.mozilla.org/ru/docs/Web/API/Element/outerHTML -->
+    <ul id="list">
+        <li>List Item 1</li>
+        <li>List Item 2</li>
+        <li>List Item 3</li>
+        <li>List Item 4</li>
+        <li>List Item 5</li>
+    </ul>
+    <br />
+    <input type="button" value="Вибрати перший елемент"/><br />
+    <input type="button" value="Вибрати останній елемент" /><br />
+    <input type="button" value="Вибрати наступний елемент" /><br />
+    <input type="button" value="Вибрати попередній елемент" /><br />
+    <input type="button" value="Додати елемент у кінець" /><br />
+    <input type="button" value="Видалити елемент з початку" /><br />
+    <input type="button" value="Видалити елемент з кінця" /><br />
+    <input type="button" value="Видалити елемент з середини" /><br />
+    <input type="button" value="Додати елемент на початок" /><br />
+
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
